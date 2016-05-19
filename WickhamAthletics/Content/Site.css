@@ -1,0 +1,159 @@
+﻿body {
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding: 5vh 2vw 2vw;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 100%
+}
+
+footer {
+    background-color: #222222;
+    border-color: #080808;
+    padding: 1vh 2vw;
+}
+
+.body-content {
+    background-color: #ddd;
+}
+
+.navbar-inverse {
+    background-color: #442da0;
+    border-color: #080808;
+}
+
+.header-image {
+    /*background-color: #808080;*/
+    background-image: url('../Images/logo-splash.jpg');
+    background-position: center;
+    background-size:cover;
+    margin-top: 50px;
+    padding: 1vw;
+}
+
+.header-image p {
+    color: black;
+}
+
+.jumbo-logo {
+}
+
+footer p, footer h2, footer li {
+    color: white;
+}
+
+form  {
+    margin-top: 10px;
+}
+
+.footer-h2 {
+}
+
+.header-image h1 {
+    color: #442da0;
+}
+
+.grey {
+    background-color: #aaa;
+    /*background-image: url('../Images/logo-splash.jpg');*/
+    padding: 2%;
+    font-size: 19px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.grey-row {
+    background-color: #aaa;
+}
+
+.light-grey {
+    padding: 2%;
+    font-size: 19px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.full-width {
+    background-color: #222222;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bio-image {
+    width: 100%;
+}
+
+.purple-text {
+    color: #442da0;
+}
+
+.tab-right {
+    padding-left: 2em;
+}
+
+.tab-righter {
+    padding-left: 3em;
+}
+
+.top-space {
+    margin-top: 2em;
+}
+
+.btn-primary {
+    background-color: #442da0;
+    border-color: #251958;
+    transition: background-color 1s;
+}
+
+.btn-primary:hover {
+    background-color: #63549d;
+    transition: background-color 1s;
+}
+
+.large-body-text {
+    font-size: 18px;
+}
+
+.extra-large-text {
+    font-size: 1.5vw;
+}
+
+.about-image {
+    width: 100%;
+}
+
+a, a:hover {
+    transition: color 1s;
+}
+
+.right-align {
+    text-align: right;
+    border-right: 1px solid #442da0;
+}
+
+.social-media-link {
+    width: 4vw;
+}

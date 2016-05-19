@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Wickham Athletics</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/jquery.bxslider.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Wickham Athletics", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Ryan", "Ryan", "Home")</li>
+                    <li>@Html.ActionLink("Jimmy", "Jimmy", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+    </div> 
+    <div class="container-fluid body-content full-width">
+        <footer>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="footer-h2">Want more information?</h2>
+                </div>
+                <div class="col-xs-12">
+                <div class="col-md-6">
+                    <div class="col-xs-12">
+                        <p>Fill out the form or contact us by the following methods:</p>
+                    </div>
+                    <div class="col-xs-3 right-align">
+                        <p>phone</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>785.383.3490</p>
+                    </div>
+                    <div class="col-xs-3 right-align">
+                        <p>email</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>ryan@wickhamathletics.com</p>
+                    </div>
+                    <div class="col-xs-3 right-align">
+                        <p>brick and mortar</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>5626 SW Topeka Blvd, Suite A </p>
+                        <p>Topeka, Kansas 66609</p>
+                    </div>
+                    <div class="col-xs-3">
+
+                    </div>
+                    <a href="https://www.facebook.com/WickhamAthletics/"><img src="~/Images/grey-facebook.png" alt="Facebook logo" class="social-media-link col-xs-9" /></a>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="col-xs-12">
+                            <input type="text" value="Name" class="col-md-6"/>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" value="Phone Number or email address" class="col-md-6" />
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea rows="6" cols="50" name="message">Enter a message</textarea>
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="submit" value="Submit" name="Email" class="col-md-6"/>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
