@@ -1,0 +1,31 @@
+﻿@model WickhamAthletics.Models.EmailModel
+@{
+    //The AjaxOptions determine the behavior of the AJAX call
+    //(e.g. what method on the server is called, what html element to update upon completion, etc.)
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "Post",
+        LoadingElementId = "loading-area",
+        LoadingElementDuration = 1000,
+        Url = "Home/Submit", //Url.Action("Submit"),
+        OnBegin = "HideForm",
+        OnFailure = "ShowFailure",
+        UpdateTargetId = "message-area"
+    };
+}
+
+<div class="col-md-6" id="form-area">
+    @using (Ajax.BeginForm(ajaxOptions))
+    {
+                        <!--<input type="text" value="Name" class="col-md-6"/>-->
+        @Html.TextBoxFor(m => m.Name, new { placeholder = "Your Name" })
+        @Html.ValidationMessageFor(m => m.Name)
+                        <!--<input type="text" value="Phone Number or email address" class="col-md-6" />-->
+        @Html.TextBoxFor(m => m.From, new { placeholder = "Your email address" })
+        @Html.ValidationMessageFor(m => m.From)
+                        <!--<textarea rows="6" cols="50" name="message">Enter a message</textarea>-->
+        @Html.TextAreaFor(m => m.Body, new { placeholder = "Message" })
+        @Html.ValidationMessageFor(m => m.Body)
+        <input type="submit" value="Send" name="Email" />
+    }
+</div>

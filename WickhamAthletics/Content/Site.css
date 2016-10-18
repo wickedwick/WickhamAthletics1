@@ -2,6 +2,7 @@
     /*padding-top: 50px;*/
     padding-bottom: 20px;
     background-color: black;
+    overflow-x: hidden;
 }
 
 html, body {
@@ -52,6 +53,21 @@ footer {
     background-size:cover;
     margin-top: 50px;
     padding: 1vw;
+}
+
+.header {
+    padding: 1vw;
+    font-size: 19px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 50px;
+}
+
+.dark-header {
+    background-color: #aaa;
+}
+
+.margin-bottom {
+    margin-bottom: 5vh;
 }
 
 .header-image p {
@@ -151,9 +167,20 @@ a, a:hover {
 
 .right-align {
     text-align: right;
+}
+
+.border-right {
     border-right: 1px solid #442da0;
 }
 
 .social-media-link {
     width: 4vw;
+}
+
+label {
+    color: white;
+}
+
+input[type=submit], input[type=text] {
+    width: 50%;
 }

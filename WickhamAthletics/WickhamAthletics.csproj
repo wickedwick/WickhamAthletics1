@@ -206,6 +206,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmailService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -250,6 +251,18 @@
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\ryan.jpg" />
     <Content Include="Images\spinner.gif" />
+    <Content Include="Images\wick1.jpg" />
+    <Content Include="Images\wick10.jpg" />
+    <Content Include="Images\wick11.jpg" />
+    <Content Include="Images\wick2.jpg" />
+    <Content Include="Images\wick3.jpg" />
+    <Content Include="Images\wick4.jpg" />
+    <Content Include="Images\wick5.jpg" />
+    <Content Include="Images\wick6.jpg" />
+    <Content Include="Images\wick7.jpg" />
+    <Content Include="Images\wick8.jpg" />
+    <Content Include="Images\wick9.jpg" />
+    <Content Include="Images\wickMerch.jpg" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -257,12 +270,18 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\GoDaddy Live.pubxml" />
+    <None Include="Properties\PublishProfiles\GoDaddy WebDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Production.pubxml" />
+    <None Include="Properties\PublishProfiles\wickhamathletics.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\WickhamAthletics.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.bxslider.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -271,7 +290,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -307,6 +328,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Ryan.cshtml" />
     <Content Include="Views\Home\Jimmy.cshtml" />
+    <Content Include="Views\Home\_SubmitMessage.cshtml" />
+    <Content Include="Views\Home\Calendar.cshtml" />
+    <Content Include="Views\Home\Members.cshtml" />
+    <Content Include="Views\Home\_ContactForm.cshtml" />
+    <Content Include="Views\Home\_EmailUpdateMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
