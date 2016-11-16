@@ -195,13 +195,17 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BusinessLogic\SpecialPageManager.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DataAccess\CharityViewData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CharityView.cs" />
+    <Compile Include="Models\DonationTypes.cs" />
     <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -333,6 +337,9 @@
     <Content Include="Views\Home\Members.cshtml" />
     <Content Include="Views\Home\_ContactForm.cshtml" />
     <Content Include="Views\Home\_EmailUpdateMessage.cshtml" />
+    <Content Include="Views\Home\Testimonials.cshtml" />
+    <Content Include="Views\Home\Videos.cshtml" />
+    <Content Include="Views\Home\Charity.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

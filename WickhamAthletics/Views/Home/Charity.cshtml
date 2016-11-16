@@ -1,0 +1,39 @@
+﻿@model WickhamAthletics.Models.CharityView
+@using WickhamAthletics.Models
+
+@{
+    ViewBag.Title = "Charity";
+    var view = (CharityView)ViewData["view"];
+}
+<div class="row header dark-header">
+    <h1>
+        @Html.DisplayFor(t => view.Title)
+    </h1>
+    <h2>
+        @Html.DisplayFor(h => view.Heading)
+    </h2>
+
+    <hr />
+    <div class="col-md-3 hidden-xs hddden-sm"></div>
+    <div class="col-md-6">
+        @foreach (var type in view.DonationTypes)
+        {
+            <div class="col-md-4 col-sm-6">
+                <h3>@type.Title</h3>
+                <ul>
+                    @foreach (var item in type.ListItems)
+                    {
+                        <li>@item</li>
+                    }
+                </ul>
+            </div>
+        }
+
+    </div>
+    <div class="col-md-3 hidden-xs hddden-sm"></div>
+</div>
+<div col="col-xs-12">
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

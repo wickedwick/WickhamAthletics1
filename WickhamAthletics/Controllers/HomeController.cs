@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using WickhamAthletics.Models;
 using WickhamAthletics.Services;
+using WickhamAthletics.BusinessLogic;
 
 namespace WickhamAthletics.Controllers
 {
@@ -45,6 +46,22 @@ namespace WickhamAthletics.Controllers
         {
             return View();
         }
+
+        public ActionResult Charity()
+        {
+            ViewData["view"] = SpecialPageManager.GetCharityViewData();
+            return View();
+        }
+
+        //public ActionResult Testimonials()
+        //{
+        //    return View();
+        //}
+
+        //public ActionResult Videos()
+        //{
+        //    return View();
+        //}
 
         [HttpPost]
         public async Task<PartialViewResult> Submit(EmailModel model)
