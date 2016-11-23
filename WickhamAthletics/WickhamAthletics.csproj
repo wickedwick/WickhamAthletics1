@@ -222,6 +222,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\bx_loader.gif" />
+    <Content Include="Images\Charity.jpg" />
     <Content Include="Images\controls.png" />
     <Content Include="Images\front_view.jpg" />
     <Content Include="Images\grey-facebook.png" />
@@ -253,6 +254,7 @@
     <Content Include="Images\leftnav_top.png" />
     <Content Include="Images\logo-splash.jpg" />
     <Content Include="Images\logo.jpg" />
+    <Content Include="Images\RMHCharity.jpg" />
     <Content Include="Images\ryan.jpg" />
     <Content Include="Images\spinner.gif" />
     <Content Include="Images\wick1.jpg" />
